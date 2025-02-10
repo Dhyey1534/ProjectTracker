@@ -4,9 +4,23 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Login</title>
 </head>
 <body>
-<h1>login</h1>
+	<h1>login</h1>
+	
+	<form action="">
+	
+		Email : <input type="email" placeholder="abc@gmail.com"><br><br>
+		
+		Password : <input type="password" placeholder="password"><br><br>
+		
+		<input type="submit" value="Login"><br><br>
+		
+	</form>
+	
+	Don't Have an Account ? <a href="signup">Signup</a><br><br>
+	
+	<a href="forgotPassword">Forgot Password</a>
 </body>
 </html>
