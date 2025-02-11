@@ -21,6 +21,6 @@
 	
 	Don't Have an Account ? <a href="signup">Signup</a><br><br>
 	
-	<a href="forgotPassword">Forgot Password</a>
+	<a href="forgetPassword">Forgot Password</a>
 </body>
 </html>

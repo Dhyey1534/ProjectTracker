@@ -20,7 +20,7 @@
 		Password : <input type="password" placeholder="password"><br><br>
 		
 		Confirm Password : <input type="password" placeholder="comfirm password"><br><br>
-		
+		bc 
 		Gender : <label for="gender"></label>
 				 <select id="gender" name="gender">
     				<option value="male">Male</option>
