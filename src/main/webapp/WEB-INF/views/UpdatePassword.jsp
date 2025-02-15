@@ -4,24 +4,23 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Login</title>
+<title>Update Password</title>
 </head>
 <body>
-	<h1>login</h1>
+	<h2>Update Password</h2>
 	
-	<form action="">
+	<form action="updatePassword" method="post">
 	
 		Email : <input type="email" placeholder="abc@gmail.com" name="email"><br><br>
 		
+		OTP : <input type="text" placeholder="1234" name="otp"><br><br>
+		
 		Password : <input type="password" placeholder="password" name="password"><br><br>
 		
+		Confirm Password : <input type="password" placeholder="confirmPassword" name="confirmPassword"><br><br>
 		
-		<input type="submit" value="Login"><br><br>
+		<input type="submit" value="Update Password"><br><br>
 		
 	</form>
-	
-	Don't Have an Account ? <a href="signup">Signup</a><br><br>
-	
-	<a href="forgetPassword">Forgot Password</a>
 </body>
 </html>
