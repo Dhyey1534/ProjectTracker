@@ -1,5 +1,6 @@
 package com.grownited.entity;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 import jakarta.persistence.Entity;
@@ -18,8 +19,8 @@ public class ProjectEntity {
 	private String description;
 	private String technology;
 	private Integer estimatedHours;
-	private Date startDate;
-	private Date completionDate;
+	private LocalDate startDate;
+	private LocalDate completionDate;
 	
 	public Integer getProjectId() {
 		return projectId;
@@ -52,16 +53,16 @@ public class ProjectEntity {
 	public void setEstimatedHours(Integer estimatedHours) {
 		this.estimatedHours = estimatedHours;
 	}
-	public Date getStartDate() {
+	public LocalDate getStartDate() {
 		return startDate;
 	}
-	public void setStartDate(Date startDate) {
+	public void setStartDate(LocalDate startDate) {
 		this.startDate = startDate;
 	}
-	public Date getCompletionDate() {
+	public LocalDate getCompletionDate() {
 		return completionDate;
 	}
-	public void setCompletionDate(Date completionDate) {
+	public void setCompletionDate(LocalDate completionDate) {
 		this.completionDate = completionDate;
 	}
 	

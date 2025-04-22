@@ -41,6 +41,7 @@
             <button type="submit" class="btn btn-primary btn-block">Send OTP</button>
           </div>
         </div>
+        ${error}
       </form>
 	  <p class="mb-0">
      		Remember Password<a href="login">Login</a>

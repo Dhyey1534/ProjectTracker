@@ -53,9 +53,9 @@
 		</a>
 			<ul id="status-nav" class="nav-content collapse "
 				data-bs-parent="#sidebar-nav">
-				<li><a href="projectteam"> <i class="bi bi-circle"></i><span>Add Project Status</span>
+				<li><a href="status"> <i class="bi bi-circle"></i><span>Add Project Status</span>
 				</a></li>
-				<li><a href="projectteamlist"> <i class="bi bi-circle"></i><span>List Project Status</span>
+				<li><a href="statuslist"> <i class="bi bi-circle"></i><span>List Project Status</span>
 				</a></li>
 			</ul></li>
 			
@@ -105,7 +105,7 @@
 		<li class="nav-heading">Manage</li>
 
 		<li class="nav-item"><a class="nav-link collapsed"
-			href="userlist"> <i class="bi bi-person"></i> <span>Users</span>
+			href="listuser"> <i class="bi bi-person"></i> <span>Users</span>
 		</a></li>
 		<!-- End Profile Page Nav -->
 

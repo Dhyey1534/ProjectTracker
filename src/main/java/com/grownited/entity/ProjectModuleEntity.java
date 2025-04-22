@@ -13,13 +13,13 @@ import jakarta.persistence.Table;
 public class ProjectModuleEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	Integer moduleId;
-	Integer projectId;
-	String moduleName;
-	String description;
-	Integer estimatedHours;
-	String status;
-	Date startDate;
+	private	Integer moduleId;
+	private	Integer projectId;
+	private	String moduleName;
+	private	String description;
+	private	Integer estimatedHours;
+	private String status;
+	private Date startDate;
 	
 	public Integer getModuleId() {
 		return moduleId;

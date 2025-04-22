@@ -14,7 +14,7 @@ public class TaskEntity {
 	private Integer taskId;
 	private Integer moduleId;
 	private Integer projectId;
-	private String title;
+	private String taskTitle;
 	private String priority;
 	private String description;
 	private Integer statusId;
@@ -37,11 +37,12 @@ public class TaskEntity {
 	public void setProjectId(Integer projectId) {
 		this.projectId = projectId;
 	}
-	public String getTitle() {
-		return title;
+	
+	public String getTaskTitle() {
+		return taskTitle;
 	}
-	public void setTitle(String title) {
-		this.title = title;
+	public void setTaskTitle(String taskTitle) {
+		this.taskTitle = taskTitle;
 	}
 	public String getPriority() {
 		return priority;

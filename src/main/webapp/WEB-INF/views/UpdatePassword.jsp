@@ -62,6 +62,7 @@
             <button type="submit" class="btn btn-primary btn-block">Update Password</button>
           </div>
         </div>
+        ${error}
       </form>
     </div>
   </div>

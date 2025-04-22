@@ -56,4 +56,30 @@ public class StatusController {
 		statusRepository.deleteById(statusId);
 		return "redirect:/statuslist";
 	}
+	
+	@GetMapping("editstatus")
+	public String editStatus(Integer statusId,Model model) {
+		Optional<StatusEntity> op=statusRepository.findById(statusId);
+		if(op.isEmpty()) {
+			return "redirect:/statuslist";
+		}else {
+			model.addAttribute("status", op.get());
+			return "EditStatus";
+		}
+		
+	}
+	
+	@PostMapping("updatestatus")
+	public String updateStatus(StatusEntity status) {
+		Optional<StatusEntity> op=statusRepository.findById(status.getStatusId());
+		if(op.isPresent()) {
+			StatusEntity dbStatus=op.get();
+			
+			dbStatus.setStatusName(status.getStatusName());
+			
+			statusRepository.save(dbStatus);
+		}
+		
+		return "redirect:/statuslist";
+	}
 }

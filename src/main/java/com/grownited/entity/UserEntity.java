@@ -25,6 +25,7 @@ public class UserEntity {
 	private String role;// Admin,Customer,Shopkeeper
 	private Date createdAt;
 	private Boolean status;
+	private String otp;
 	public Integer getUserId() {
 		return userId;
 	}
@@ -84,6 +85,12 @@ public class UserEntity {
 	}
 	public void setStatus(Boolean status) {
 		this.status = status;
+	}
+	public String getOtp() {
+		return otp;
+	}
+	public void setOtp(String otp) {
+		this.otp = otp;
 	}
 	
 	

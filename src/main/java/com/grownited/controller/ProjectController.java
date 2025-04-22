@@ -57,4 +57,39 @@ public class ProjectController {
 		projectRepository.deleteById(projectId);
 		return "redirect:/projectlist";
 	}
+	
+	@GetMapping("editproject")
+	public String editProject(Integer projectId,Model model) {
+		Optional<ProjectEntity> op=projectRepository.findById(projectId);
+		
+		if(op.isEmpty()) {
+			return "redirect:/projectlist";
+		}else {
+			ProjectEntity project=op.get();
+			model.addAttribute("project", project);
+			
+			return "EditProject";
+		}
+		
+	}
+	
+	@PostMapping("updateproject")
+	public String updateProject(ProjectEntity projectEntity) {
+		Optional<ProjectEntity> op=projectRepository.findById(projectEntity.getProjectId());
+		
+		if(op.isPresent()) {
+			ProjectEntity dbProject=op.get();
+			
+			dbProject.setTitle(projectEntity.getTitle());
+			dbProject.setTechnology(projectEntity.getTechnology());
+			dbProject.setDescription(projectEntity.getDescription());
+			dbProject.setEstimatedHours(projectEntity.getEstimatedHours());
+			dbProject.setStartDate(projectEntity.getStartDate());
+			dbProject.setCompletionDate(projectEntity.getCompletionDate());
+			
+			projectRepository.save(dbProject);
+		}
+		
+		return "redirect:/projectlist";
+	}
 }

@@ -1,0 +1,78 @@
+package com.grownited.dto;
+
+import java.util.Date;
+
+public class ProjectModuleDto {
+	private Integer moduleId;
+	private Integer projectId;
+	private String moduleName;
+	private String description;
+	private Integer estimatedHours;
+	private String status;
+	private Date startDate;
+	private String title;
+	
+	
+	public ProjectModuleDto(Integer moduleId,String description,Integer estimatedHours,String moduleName,Integer projectId,Date startDate,String status,String title) {
+		super();
+		this.moduleId=moduleId;
+		this.projectId=projectId;
+		this.moduleName=moduleName;
+		this.description=description;
+		this.estimatedHours=estimatedHours;
+		this.startDate=startDate;
+		this.status=status;
+		this.title=title;
+		// TODO Auto-generated constructor stub
+	}
+	public Integer getModuleId() {
+		return moduleId;
+	}
+	public void setModuleId(Integer moduleId) {
+		this.moduleId = moduleId;
+	}
+	public Integer getProjectId() {
+		return projectId;
+	}
+	public void setProjectId(Integer projectId) {
+		this.projectId = projectId;
+	}
+	public String getModuleName() {
+		return moduleName;
+	}
+	public void setModuleName(String moduleName) {
+		this.moduleName = moduleName;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	public Integer getEstimatedHours() {
+		return estimatedHours;
+	}
+	public void setEstimatedHours(Integer estimatedHours) {
+		this.estimatedHours = estimatedHours;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public Date getStartDate() {
+		return startDate;
+	}
+	public void setStartDate(Date startDate) {
+		this.startDate = startDate;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	
+	
+}
